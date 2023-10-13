@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>fake_prediction</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+<style>
+            select {
+                appearance: none;
+                outline: 0;
+                background: rgb(164, 227, 252);
+                background-image: none;
+                width: 40%;
+                height: 40%;
+                color: black;
+                cursor: pointer;
+                border:1px solid black;
+                border-radius:3px;
+            }
+            .select {
+                position: relative;
+                display: block;
+                width: 10em;
+                height: 2em;
+                line-height: 3;
+                overflow: hidden;
+                border-radius: .25em;
+                padding-bottom:10px;
+                  
+            }
+            h1 {
+                color:Tomato;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                    <a href="{{url_for('index')}}" class="logo">Fake Job<em> Post</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{{url_for('index')}}"  >Home</a></li>
+                            <li><a href="{{url_for('login')}}"  >Login</a></li>
+							<li><a href="{{url_for('upload')}}"  >Upload</a></li>
+                          
+							<li><a href="{{url_for('fake_prediction')}}" class="active">Fraudulent job post </a></li>
+							<li><a href="{{url_for('text_prediction')}}">Text processing </a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <section class="section section-bg" id="call-to-action" style="background-image: url(../static/assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                         <h2>Fake Job Post <em>Prediction</em></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+         
+            <section class='tabs-content'>
+              <div class="row">
+			  <div class="col-md-6 col-lg-4" style="margin-left:380px">
+                  <center><h1 style="color:Tomato;">Fake Job Post Prediction</h1></center>
+				  </br>
+				  </br>
+				   
+				  </div>
+				  <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-10px;">
+				 <form class="form-horizontal"  action="{{ url_for('predict')}}" method="POST">
+		 
+			 <center><b style="color:Tomato;">Enter The Details</b></center>
+	 
+		 <div class="span5">
+				<div class="control-group">
+				    
+					 </br>
+					 
+					 
+					 
+					
+					<center>  <div class="controls">
+			           
+			        
+			           
+			       <b style="color:Black;">Telecommuting:</b>    <select   type="text"  name="Telecommuting" required="required" placeholder="Telecommuting">
+						<option value="0">NO</option>
+						<option value="1">YES</option>
+					    
+					 
+							 
+							 
+					</select> 
+				   </div></center>
+				   </br>
+					<center>  <div class="controls">
+			           
+			  <b style="color:Black;">Has_company_logo:</b>       <select   type="text"  name="Has_company_logo" required="required" placeholder="Has_company_logo">
+						<option value="0">NO</option>
+						<option value="1">YES</option>
+				 
+							 
+					</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				     </div></center>
+				   </br>
+				 
+				   
+				  
+				   
+				    <div class="controls">
+			           
+			      
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:Black;">Has_questions:</b>    <select   type="text"  name="Has_questions" required="required" placeholder="Has_questions">
+						<option value="0">NO</option>
+						<option value="1">YES</option>
+					 
+						
+						 
+					</select> 
+				   </div>
+				   
+					 </br>
+				 
+				 <center>   <div class="controls">
+			           
+			       
+			 	<b style="color:Black;">Employment_type:</b>  <select   type="text"  name="Employment_type" required="required" placeholder="Employment_type">
+					
+						<option value="1">Full-time</option>
+					    <option value="2">Part-time</option>
+						<option value="3">Contract</option>
+						<option value="4">Temporary</option>
+						<option value="5">Other</option>
+						 <option value="6">Not Mentioned employment_type</option>
+						
+						 
+					</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				   </div></center>
+					  
+					  </br>
+					  
+					  <center>  <div class="controls">
+			           
+			     <b style="color:Black;">Required_experience:</b>    <select   type="text"  name="Required_experience" required="required" placeholder="Required_experience">
+						 
+						<option value="1">Mid-Senior level</option>
+					    <option value="2">Executive</option>
+						<option value="3">Entry level</option>
+						<option value="4">Associate</option>
+						<option value="5">Not Applicable</option>
+						 <option value="6">Director</option>
+						 <option value="7">Internship</option>
+						 <option value="8">Not Mentioned required_experience</option>
+					 
+							 
+					</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				     </div></center>
+					  </br>
+					<center>  <div class="controls">
+			           
+			      <b style="color:Black;">Required_education:</a>   <select   type="text"  name="Required_education" required="required" placeholder="Required_education">
+						 
+						<option value="1">Master's Degree</option>
+					    <option value="2">Bachelor's Degree</option>
+						<option value="3">Unspecified</option>
+						<option value="4">High School or equivalent</option>
+						<option value="5">Associate Degree</option>
+						 <option value="6">Vocational</option>
+						 <option value="7">Vocational - HS Diploma</option>
+						 <option value="8">Professional</option>
+						  <option value="9">Some High School Coursework</option>
+						 <option value="10">Some College Coursework Completed</option>
+						  <option value="11">Certification</option>
+						   <option value="12">Doctorate</option>
+						    <option value="13">Vocational - Degree</option>
+							 <option value="14">Not Mentioned required_education</option>
+						 
+							 
+					</select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				     </div></center>
+					  </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				     <b style="color:Black;">Function:</a>     <select   type="text"  name="Function" required="required" placeholder="Function">
+					 
+						<option value="1">Marketing</option>
+					   <option value="2">Customer Service</option>
+						<option value="3">Information Technology</option>
+						<option value="4">Sales</option>
+						<option value="5">Health Care Provider</option>
+						 <option value="6">Management</option>
+						 <option value="7">Other</option>
+						 <option value="8">Engineering</option>
+						  <option value="9">Administrative</option>
+						 <option value="10">Design</option>
+						  <option value="11">Production</option>
+						   <option value="12">Education</option>
+						    <option value="13">Supply Chain</option>
+							 <option value="14">Business Development</option>
+							 <option value="15">Product Management</option>
+							 <option value="16">Financial Analyst</option>
+							 <option value="17">Consulting</option>
+							 <option value="18">Human Resources</option>
+							 
+							 <option value="22">Project Management</option>
+							 <option value="23">Manufacturing</option>
+							 <option value="24">Public Relations</option>
+							 <option value="25">Strategy/Planning</option>
+							 <option value="26">Advertising</option>
+							 <option value="27">Finance</option>
+							  <option value="28">General Business</option>
+							   <option value="29">Research</option>
+							    <option value="30">Accounting/Auditing</option>
+								 <option value="31">Art/Creative</option>
+								 <option value="32">Quality Assurance</option>
+								 <option value="33">Data Analyst</option>
+							  <option value="34">Business Analyst</option>
+							   <option value="35">Writing/Editing</option>
+							    <option value="36">Distribution</option>
+								 <option value="37">Science</option>
+								  <option value="38">Training</option>
+								   <option value="39">Purchasing</option>
+								    <option value="40">Legal</option>
+									 <option value="41">Not Mentioned function</option>
+							 
+					</select> 
+				   </div></center>
+					  
+					  </br>
+					  </br>
+    	 	 <center><input type="submit" class="btn btn-primary" value="Submit" style="margin-left: 10px" ></center>
+				    
+				</div>
+			</div>
+			</br>
+					<b>Prediction is: </b> <center><h1 style="color: tomato;">{{prediction_texts}}	</h1> </center> 
+	</form> 
+								 
+				 
+		</div>		 
+				 
+				</br>
+</br>				
+				 
+ 
+				 
+				
+				
+				
+            </div>
+			  
+			  
+			  
+			  
+            </section>
+        </div>
+    </section>
+    <!-- ***** Our Classes End ***** -->
+ 
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../static/assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../static/assets/js/popper.js"></script>
+    <script src="../static/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="../static/assets/js/scrollreveal.min.js"></script>
+    <script src="../static/assets/js/waypoints.min.js"></script>
+    <script src="../static/assets/js/jquery.counterup.min.js"></script>
+    <script src="../static/assets/js/imgfix.min.js"></script> 
+    <script src="../static/assets/js/mixitup.js"></script> 
+    <script src="../static/assets/js/accordions.js"></script>
+    
+    <!-- Global Init -->
+    <script src="../static/assets/js/custom.js"></script>
+
+  </body>
+</html>

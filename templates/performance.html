@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>performance</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+     <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="{{url_for('index')}}" class="logo">Fake Job<em> Post</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{{url_for('index')}}"  >Home</a></li>
+                            <li><a href="{{url_for('login')}}"  >Login</a></li>
+						
+							<li><a href="{{url_for('fake_prediction')}}">Fraudulent job post </a></li>
+							<li><a href="{{url_for('text_prediction')}}">Text processing</a></li>
+							<li><a href="{{url_for('chart')}}"class="active">Chart</a></li>
+							<li><a href="{{url_for('performance')}}">Performance analysis</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <section class="section section-bg" id="call-to-action" style="background-image: url(../static/assets/images/banner-image-1-1920x500.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cta-content">
+                        <br>
+                        <br>
+                         <h2>Fake Job Post <em>Prediction</em></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Our Classes Start ***** -->
+    <section class="section" id="our-classes">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+         
+            <section class='tabs-content'>
+              <div class="row">
+			   
+                  
+				  
+				 
+				
+				<div class="section-title">
+				<div class="col-md-6 col-lg-10" style="margin-left:320px">
+          <h2>PERFORMANCE ANALYSIS</h2>
+		   </div>
+	  <body>
+ <div><span style="margin-left:300px;color:green"><font size="12">Precision and recall</font></div>
+ </br>
+ </br>
+ <div><span style="margin-left:450px;color:black"><font size="12">   Recall  Precision </font></div> 
+ </br></br>
+<div><span style="margin-left:50px;color:black"><font size="12">Fake(0)   </font>
+<span style="margin-left:280px;color:black"><font size="12">0.98  1.00   </font>
+</div> 
+</br>
+</br>
+<div><span style="margin-left:50px;color:black"><font size="12">Legit(1)</font>
+<span style="margin-left:300px;color:black"><font size="12">0.43  0.84    </font>
+</div>
+
+ 
+</div>  
+ </br>
+</br>
+</br>
+
+
+<div class="col-lg-8 mx-auto">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            
+                       
+                      <div><span style="margin-left:170px;color:red"><font size="12">Confusion Matrix</font></div>
+					  </br>
+					  </br>
+					  
+				<center>	    <div><img style="margin-left:60px;width:800px;height:500px;" src="../static/download.png"</div></center>
+                               
+                         
+						       
+        </div>
+
+
+ 
+</body>
+				
+				
+				
+            </div>
+			  
+			  
+			  
+			  
+            </section>
+        </div>
+    </section>
+    <!-- ***** Our Classes End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../static/assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../static/assets/js/popper.js"></script>
+    <script src="../static/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="../static/assets/js/scrollreveal.min.js"></script>
+    <script src="../static/assets/js/waypoints.min.js"></script>
+    <script src="../static/assets/js/jquery.counterup.min.js"></script>
+    <script src="../static/assets/js/imgfix.min.js"></script> 
+    <script src="../static/assets/js/mixitup.js"></script> 
+    <script src="../static/assets/js/accordions.js"></script>
+    
+    <!-- Global Init -->
+    <script src="../static/assets/js/custom.js"></script>
+
+  </body>
+</html>

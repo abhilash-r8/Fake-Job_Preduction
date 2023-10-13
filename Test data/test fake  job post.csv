@@ -1,0 +1,9 @@
+Id,telecommuting,has_company_logo,has_questions,employment_type,required_experience,required_education,function,fraudulent
+1,No,Yes,No,Other,Internship,Bachelor's Degree,Marketing,Legit Job Post
+2,No,Yes,No,Full-time,Not Applicable,Bachelor's Degree,Customer Service,Legit Job Post
+3,No,Yes,Yes,Full-time,Mid-Senior level,High School or equivalent,Other,Fake Job Post
+4,No,No,No,Not Mentioned employment_type,Mid-Senior level,Bachelor's Degree,Information Technology,Fake Job Post
+5,No,Yes,Yes,Full-time,Mid-Senior level,Bachelor's Degree,Health Care Provider,Legit Job Post
+6,No,Yes,Yes,Contract,Mid-Senior level,Bachelor's Degree,Information Technology,Legit Job Post
+7,Yes,No,No,Not Mentioned employment_type,Mid-Senior level,Bachelor's Degree,Information Technology,Fake Job Post
+8,No,No,Yes,Not Mentioned employment_type,Mid-Senior level,Bachelor's Degree,Information Technology,Fake Job Post
